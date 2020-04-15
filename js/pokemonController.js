@@ -114,7 +114,7 @@ function animatePokemon(elPokemon, pokemonId = null) {
     var elPokemonImg, pokemonIdx, backPokemonImage, frontPokemonImage;
     
     if(pokemonId) {
-        console.log('ended here');
+//         console.log('ended here');
         
         elPokemon.style.zIndex = '1';
         gLastAnimatedPokemon = elPokemon;
@@ -125,7 +125,7 @@ function animatePokemon(elPokemon, pokemonId = null) {
         frontPokemonImage = gPokemons[pokemonIdx].sprites.front_default;
 
     } else {
-        console.log('ended there');
+//         console.log('ended there');
         elPokemonImg = document.querySelector('.pokemon-modal .pokemon-img');
         backPokemonImage = elPokemon.sprites.back_default;
         frontPokemonImage = elPokemon.sprites.front_default;
@@ -133,7 +133,7 @@ function animatePokemon(elPokemon, pokemonId = null) {
 
 
     gCurrPokemonInterval = setInterval(() => {
-        console.log('here');
+//         console.log('here');
 
         if (elPokemonImg.src === frontPokemonImage) {
             elPokemonImg.style.opacity = '0';
@@ -174,7 +174,7 @@ function getPokemonById(pokemonId) {
 
 function removeInterval(elPokemon, pokemonId) {
 
-    console.log('STOPPING INTERVAL');
+//     console.log('STOPPING INTERVAL');
     
     clearInterval(gCurrPokemonInterval);
     elPokemon.style.zIndex = 'unset';
