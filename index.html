@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="favicon.png"/>
+    <link rel="stylesheet" href="css/pokemon.css">
+    <title>AJAX Pokémon</title>
+</head>
+
+<body onload="populatePokemons()">
+
+    <section class="screen modal-exiter" onclick="toggleMenu('exit')"></section>
+
+    <nav class="main-nav ">
+        <main class="nav-main container flex space-between align-center">
+
+            <img src="assets/img/pokemon-logo.png" class="logo">
+            <header class="nav-header">helping you Catch Them All!</header>
+
+        </main>
+    </nav>
+    <main class="main-content container flex column">
+        <header class="header-section flex space-between align-center wrap">
+            <p class="content-header">Your Pokémons</p>
+            <button class="sort-pokemons btn" onclick="sortPokemons()">by Name</button>
+            <aside class="pokemon-count flex">
+                <span class="poke-count"></span>/151
+            </aside>
+        </header>
+
+        <section class="pokemons-section flex wrap">
+
+        </section>
+
+    </main>
+
+    <div class="modal flex column space-evenly align-center">
+        
+    </div>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/vanilla-tilt.min.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/storageServices.js"></script>
+    <script src="js/pokemonController.js"></script>
+    <script src="js/pokemonService.js"></script>
+</body>
+
+</html>
